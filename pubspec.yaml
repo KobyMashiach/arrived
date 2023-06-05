@@ -30,6 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  map_picker: ^0.0.3
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -37,7 +38,18 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_localizations:
     sdk: flutter
-  google_maps_place_picker_mb: ^3.0.1
+  whatsapp_unilink: ^2.1.0
+  url_launcher: ^6.1.11
+  google_maps_flutter: ^2.2.8
+  geolocator: ^9.0.2
+  geocoding: ^2.1.0
+  flutter_typeahead: ^4.6.1
+
+  get: ^4.6.5
+  http: any
+
+  flutter_google_places: ^0.3.0
+
 
 dev_dependencies:
   flutter_test:
@@ -48,7 +60,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^2.0.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

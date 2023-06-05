@@ -1,5 +1,6 @@
-import 'package:arrived/app_appbar.dart';
-import 'package:arrived/sideMenu.dart';
+import 'package:arrived/widget/app_appbar.dart';
+import 'package:arrived/widget/send_whatsapp.dart';
+import 'package:arrived/widget/sideMenu.dart';
 import 'package:flutter/material.dart';
 
 class SendMessageNow extends StatefulWidget {
@@ -39,7 +40,13 @@ class _SendMessageNowState extends State<SendMessageNow> {
               ),
               const SizedBox(height: 30),
               FloatingActionButton.extended(
-                onPressed: () {},
+                onPressed: () {
+                  if (phoneNumberController.text.length >= 9 &&
+                      phoneNumberController.text.length <= 14) {
+                    sendMessageInWhatsapp(
+                        phoneNumberController.text, messageController.text);
+                  } else {}
+                },
                 label: Text("שלח"),
                 icon: Icon(Icons.send),
               )

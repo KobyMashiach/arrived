@@ -1,3 +1,6 @@
+import 'package:arrived/pages/arrived.dart';
+import 'package:arrived/services/navigator_service.dart';
+import 'package:arrived/pages/send_message_now.dart';
 import 'package:flutter/material.dart';
 
 class SideMenu extends StatelessWidget {
@@ -13,13 +16,19 @@ class SideMenu extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.home_outlined),
             title: const Text("בית"),
-            onTap: () {},
+            onTap: () {
+              AppNavigator().pop(context);
+              AppNavigator().push(context, Arrived());
+            },
           ),
           const Divider(color: Colors.black54),
           ListTile(
-            leading: const Icon(Icons.favorite),
-            title: const Text("מועדפים"),
-            onTap: () {},
+            leading: const Icon(Icons.phone_disabled_outlined),
+            title: const Text("הודעה בלי להוסיף לאנשי קשר "),
+            onTap: () {
+              AppNavigator().pop(context);
+              AppNavigator().push(context, SendMessageNow());
+            },
           ),
           const Divider(color: Colors.black54),
           ListTile(
