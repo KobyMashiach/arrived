@@ -48,7 +48,6 @@ dependencies:
   get: ^4.6.5
   http: any
 
-  flutter_google_places: ^0.3.0
 
 
 dev_dependencies:
