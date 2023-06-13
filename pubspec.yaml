@@ -45,6 +45,7 @@ dependencies:
   geocoding: ^2.1.0
   flutter_typeahead: ^4.6.1
 
+
   get: ^4.6.5
   http: any
 

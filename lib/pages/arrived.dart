@@ -1,3 +1,4 @@
+import 'package:arrived/pages/choose_location.dart';
 import 'package:arrived/widget/app_appbar.dart';
 import 'package:arrived/widget/maps.dart';
 import 'package:arrived/widget/sideMenu.dart';
@@ -41,20 +42,34 @@ class _ArrivedState extends State<Arrived> {
             const SizedBox(height: 30),
             FloatingActionButton.extended(
               onPressed: () {
-                Navigator.push(
+                Navigator.push(a
                   context,
                   MaterialPageRoute(builder: (BuildContext context) {
                     return const MapsScreen();
                   }),
                 );
               },
-              label: Text("פתח מפה"),
-              icon: Icon(Icons.send),
+              label: const Text("פתח מפה"),
+              icon: const Icon(Icons.send),
             ),
+            const Spacer(),
+            FloatingActionButton.extended(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (BuildContext context) {
+                    return MapScreen2();
+                  }),
+                );
+              },
+              label: const Text("2פתח מפה"),
+              icon: const Icon(Icons.send),
+            ),
+            const Spacer(),
             FloatingActionButton.extended(
               onPressed: () {},
-              label: Text("שלח"),
-              icon: Icon(Icons.send),
+              label: const Text("שלח"),
+              icon: const Icon(Icons.send),
             )
           ],
         ),
