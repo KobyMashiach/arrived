@@ -42,7 +42,7 @@ class _ArrivedState extends State<Arrived> {
             const SizedBox(height: 30),
             FloatingActionButton.extended(
               onPressed: () {
-                Navigator.push(a
+                Navigator.push(
                   context,
                   MaterialPageRoute(builder: (BuildContext context) {
                     return const MapsScreen();
